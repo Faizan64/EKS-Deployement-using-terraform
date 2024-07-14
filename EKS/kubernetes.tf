@@ -1,7 +1,7 @@
 provider "kubernetes" {
-  host                  = data.aws_eks_cluster1.cluster.cluster_endpoint_public_access
-  token                 = data.aws_eks_cluster1.token
-  cluster_ca_certificate= base64encode(data.aws_eks_cluster1.cluster.cluster_ca_certificate_authority.0.date)
+  host                  = data.aws_eks_cluster.cluster.cluster_endpoint_public_access
+  token                 = data.aws_eks_cluster.token
+  cluster_ca_certificate= base64encode(data.aws_eks_cluster.cluster.cluster_ca_certificate_authority.0.date)
 }
 
 resource "kubernetes_namespace" "text" {
