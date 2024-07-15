@@ -54,8 +54,4 @@ module "eks" {
     Environment = "dev"
     Terraform   = "true"
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 615d27c79d00fd428c58dadfbe56bff902ee6d49
