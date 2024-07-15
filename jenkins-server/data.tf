@@ -5,7 +5,7 @@ data "aws_ami" "example" {
 
   filter {
     name   = "name"
-    values = ["ubuntu/images/hvm-ssd/ubuntu-jammy-22.04-amd64-server-20240701"]
+    values = ["amzn2-ami-kernel-5.10-hvm-2.0.20240709.1-x86_64-gp2"]
   }
 
   filter {
